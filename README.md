@@ -4,6 +4,27 @@ A modern, production-ready, full-stack **Instagram Clone** built with **Flutter 
 
 ---
 
+## 📱 App Flow & Demo Screenshots
+
+Here is the complete simulated user journey captured directly from the live application running on Android:
+
+| 1. Welcome & Login | 2. Multi-Step Onboarding | 3. Home Feed & Stories |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/09_welcome_screen.png" width="230" alt="Welcome Screen" /> | <img src="docs/screenshots/10_signup_wizard.png" width="230" alt="Signup Flow" /> | <img src="docs/screenshots/01_home_feed.png" width="230" alt="Home Feed" /> |
+| *Clean Meta Welcome & Quick Login* | *8-Step Account Signup Wizard* | *Stories Tray & Real-Time Photo Feed* |
+
+| 4. Like Micro-Interaction | 5. Interactive Comments | 6. Upload / Create Post |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/02_post_liked.png" width="230" alt="Post Liked" /> | <img src="docs/screenshots/03_comments_modal.png" width="230" alt="Comments Modal" /> | <img src="docs/screenshots/05_create_post.png" width="230" alt="Create Post" /> |
+| *Optimistic Like Heart & Counter* | *Slide-Up Sheet & Emoji Bar* | *Paste Image URL, Live Preview & Presets* |
+
+| 7. Explore & Search | 8. Dark Mode Reels | 9. Profile & Settings |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/04_explore_tab.png" width="230" alt="Explore Screen" /> | <img src="docs/screenshots/06_reels_tab.png" width="230" alt="Reels Screen" /> | <img src="docs/screenshots/08_settings_sheet.png" width="230" alt="Profile and Settings" /> |
+| *Category Chips & Visual Grid* | *Immersive Short-Form Reels* | *User Profile, Stats & Settings Sheet* |
+
+---
+
 ## ✨ Features
 
 ### 🔐 User Onboarding & Authentication
