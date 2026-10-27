@@ -1,19 +1,24 @@
 import 'package:instagram_clone/singleimage.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class profile extends StatefulWidget {
-  profile({@required this.myprofile});
-  Map myprofile = new Map();
+  final Map myprofile;
+
+  const profile({super.key, required this.myprofile});
+
   @override
-  _profileState createState() => _profileState(myProfileData: myprofile);
+  _profileState createState() => _profileState();
 }
 
 class _profileState extends State<profile> {
-  _profileState({@required this.myProfileData});
+  late Map myProfileData;
+  List images = [];
 
-  Map myProfileData = new Map();
-  List images = new List();
+  @override
+  void initState() {
+    super.initState();
+    myProfileData = widget.myprofile;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +26,6 @@ class _profileState extends State<profile> {
     images = myProfileData['images'];
 //    print(images);
     var height = MediaQuery.of(context).size.height;
-    var heightfactor = height / height;
     print(height);
     return Scaffold(
       appBar: AppBar(
@@ -331,7 +335,7 @@ class _profileState extends State<profile> {
               Icons.home,
               color: Colors.grey,
             ),
-            title: Text(''),
+            label: '',
             activeIcon: Icon(
               Icons.home,
               color: Colors.black87,
@@ -346,7 +350,7 @@ class _profileState extends State<profile> {
                 Icons.search,
                 color: Colors.grey,
               ),
-              title: Text('')),
+              label: ''),
           BottomNavigationBarItem(
               activeIcon: Icon(
                 Icons.add_circle,
@@ -356,7 +360,7 @@ class _profileState extends State<profile> {
                 Icons.add_circle,
                 color: Colors.grey,
               ),
-              title: Text('')),
+              label: ''),
           BottomNavigationBarItem(
               activeIcon: Icon(
                 Icons.favorite,
@@ -366,7 +370,7 @@ class _profileState extends State<profile> {
                 Icons.favorite,
                 color: Colors.grey,
               ),
-              title: Text('')),
+              label: ''),
           BottomNavigationBarItem(
               activeIcon: Icon(
                 Icons.account_circle,
@@ -376,7 +380,7 @@ class _profileState extends State<profile> {
                 Icons.account_circle,
                 color: Colors.grey,
               ),
-              title: Text('')),
+              label: ''),
         ],
       ),
     );

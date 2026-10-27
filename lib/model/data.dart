@@ -1,5 +1,5 @@
 class data {
-  List Listadta;
+  List<dynamic> Listadta;
   bool bookmark;
 
   data(this.bookmark, this.Listadta);

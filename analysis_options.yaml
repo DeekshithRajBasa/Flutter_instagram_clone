@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    camel_case_types: ignore
+    file_names: ignore
+    non_constant_identifier_names: ignore
+    library_private_types_in_public_api: ignore
+    avoid_print: ignore
+    avoid_unnecessary_containers: ignore
+    sort_child_properties_last: ignore
+    sized_box_for_whitespace: ignore
+    deprecated_member_use: ignore

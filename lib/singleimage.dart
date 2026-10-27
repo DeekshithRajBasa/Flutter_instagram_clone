@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 
 class singleimage extends StatelessWidget {
-  singleimage({@required this.link});
+  final String link;
 
- String link;
+  const singleimage({super.key, required this.link});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

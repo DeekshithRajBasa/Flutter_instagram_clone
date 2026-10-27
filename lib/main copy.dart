@@ -9,12 +9,14 @@ void main() {
 }
 
 class myApp extends StatelessWidget {
+  const myApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.light().copyWith(
           primaryIconTheme: IconThemeData(color: Colors.black87),
-          textTheme: TextTheme(title: TextStyle(color: Colors.black87))),
+          textTheme: TextTheme(titleMedium: TextStyle(color: Colors.black87))),
       home: homeScreen(),
     );
   }
